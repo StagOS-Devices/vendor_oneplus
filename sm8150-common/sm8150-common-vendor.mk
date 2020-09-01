@@ -187,6 +187,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/product/lib64/vendor.qti.imsrtpservice@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.imsrtpservice@2.0.so \
     vendor/oneplus/sm8150-common/proprietary/product/lib64/vendor.qti.imsrtpservice@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.imsrtpservice@2.1.so \
     vendor/oneplus/sm8150-common/proprietary/product/lib64/vendor.qti.latency@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.latency@2.0.so \
+    vendor/oneplus/sm8150-common/proprietary/bin/dashd:$(TARGET_COPY_OUT_SYSTEM)/bin/dashd \
     vendor/oneplus/sm8150-common/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
     vendor/oneplus/sm8150-common/proprietary/vendor/bin/adpl:$(TARGET_COPY_OUT_VENDOR)/bin/adpl \
     vendor/oneplus/sm8150-common/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
@@ -206,9 +207,11 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/vendor/bin/hw/android.hardware.neuralnetworks@1.2-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.neuralnetworks@1.2-service-qti \
     vendor/oneplus/sm8150-common/proprietary/vendor/bin/hw/android.hardware.nfc@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.nfc@1.2-service \
     vendor/oneplus/sm8150-common/proprietary/vendor/bin/hw/android.hardware.secure_element@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.secure_element@1.1-service \
+    vendor/oneplus/sm8150-common/proprietary/vendor/bin/hw/android.hardware.vibrator@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.vibrator@1.0-service \
     vendor/oneplus/sm8150-common/proprietary/vendor/bin/hw/qcrild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qcrild \
     vendor/oneplus/sm8150-common/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.display.color@1.0-service \
     vendor/oneplus/sm8150-common/proprietary/vendor/bin/hw/vendor.dolby.hardware.dms@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.dolby.hardware.dms@1.0-service \
+    vendor/oneplus/sm8150-common/proprietary/vendor/bin/hw/vendor.oneplus.camera.CameraHIDL@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oneplus.camera.CameraHIDL@1.0-service \
     vendor/oneplus/sm8150-common/proprietary/vendor/bin/hw/vendor.oneplus.hardware.display@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oneplus.hardware.display@1.0-service \
     vendor/oneplus/sm8150-common/proprietary/vendor/bin/hw/vendor.oneplus.hardware.drmkey@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oneplus.hardware.drmkey@1.0-service \
     vendor/oneplus/sm8150-common/proprietary/vendor/bin/hw/vendor.oneplus.hardware.hdcpkey@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oneplus.hardware.hdcpkey@1.0-service \
@@ -263,6 +266,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/vendor/bin/tftp_server:$(TARGET_COPY_OUT_VENDOR)/bin/tftp_server \
     vendor/oneplus/sm8150-common/proprietary/vendor/bin/thermal-engine:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine \
     vendor/oneplus/sm8150-common/proprietary/vendor/bin/time_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/time_daemon \
+    vendor/oneplus/sm8150-common/proprietary/vendor/bin/vl53l1_daemon_main:$(TARGET_COPY_OUT_VENDOR)/bin/vl53l1_daemon_main \
     vendor/oneplus/sm8150-common/proprietary/vendor/bin/vppservice:$(TARGET_COPY_OUT_VENDOR)/bin/vppservice \
     vendor/oneplus/sm8150-common/proprietary/vendor/bin/wfdhdcphalservice:$(TARGET_COPY_OUT_VENDOR)/bin/wfdhdcphalservice \
     vendor/oneplus/sm8150-common/proprietary/vendor/bin/wifidisplayhalservice:$(TARGET_COPY_OUT_VENDOR)/bin/wifidisplayhalservice \
@@ -271,6 +275,20 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/vendor/bin/xtwifi-client:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-client \
     vendor/oneplus/sm8150-common/proprietary/vendor/bin/xtwifi-inet-agent:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-inet-agent \
     vendor/oneplus/sm8150-common/proprietary/vendor/etc/cacert_location.pem:$(TARGET_COPY_OUT_VENDOR)/etc/cacert_location.pem \
+    vendor/oneplus/sm8150-common/proprietary/vendor/etc/camera/arccali.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/arccali.bin \
+    vendor/oneplus/sm8150-common/proprietary/vendor/etc/camera/ashdr/iso617_4608x3456.ncf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ashdr/iso617_4608x3456.ncf \
+    vendor/oneplus/sm8150-common/proprietary/vendor/etc/camera/ashdr/ncf_pack.ncf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ashdr/ncf_pack.ncf \
+    vendor/oneplus/sm8150-common/proprietary/vendor/etc/camera/ashdr/ncf_pack_imx371.ncf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ashdr/ncf_pack_imx371.ncf \
+    vendor/oneplus/sm8150-common/proprietary/vendor/etc/camera/ashdr/ncf_pack_imx471.ncf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ashdr/ncf_pack_imx471.ncf \
+    vendor/oneplus/sm8150-common/proprietary/vendor/etc/camera/ashdr/ncf_pack_imx481.ncf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ashdr/ncf_pack_imx481.ncf \
+    vendor/oneplus/sm8150-common/proprietary/vendor/etc/camera/ashdr/ncf_pack_imx519.ncf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ashdr/ncf_pack_imx519.ncf \
+    vendor/oneplus/sm8150-common/proprietary/vendor/etc/camera/ashdr/ncf_pack_imx586.ncf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ashdr/ncf_pack_imx586.ncf \
+    vendor/oneplus/sm8150-common/proprietary/vendor/etc/camera/ashdr/ncf_pack_s5k3m5.ncf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ashdr/ncf_pack_s5k3m5.ncf \
+    vendor/oneplus/sm8150-common/proprietary/vendor/etc/camera/attribute.model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/attribute.model \
+    vendor/oneplus/sm8150-common/proprietary/vendor/etc/camera/calibrationOutput_uw.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/calibrationOutput_uw.bin \
+    vendor/oneplus/sm8150-common/proprietary/vendor/etc/camera/calibrationOutput_wt.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/calibrationOutput_wt.bin \
+    vendor/oneplus/sm8150-common/proprietary/vendor/etc/camera/distortion_result.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/distortion_result.bin \
+    vendor/oneplus/sm8150-common/proprietary/vendor/etc/camera/vidhance_calibration:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vidhance_calibration \
     vendor/oneplus/sm8150-common/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile1.xml \
     vendor/oneplus/sm8150-common/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile2.xml \
     vendor/oneplus/sm8150-common/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile3.xml \
@@ -317,6 +335,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.2-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.2-service-qti.rc \
     vendor/oneplus/sm8150-common/proprietary/vendor/etc/init/android.hardware.nfc@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.nfc@1.2-service.rc \
     vendor/oneplus/sm8150-common/proprietary/vendor/etc/init/android.hardware.secure_element@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.1-service.rc \
+    vendor/oneplus/sm8150-common/proprietary/vendor/etc/init/android.hardware.vibrator@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.vibrator@1.0-service.rc \
     vendor/oneplus/sm8150-common/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
     vendor/oneplus/sm8150-common/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
     vendor/oneplus/sm8150-common/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
@@ -336,6 +355,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
     vendor/oneplus/sm8150-common/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
     vendor/oneplus/sm8150-common/proprietary/vendor/etc/init/vendor.dolby.hardware.dms@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.hardware.dms@1.0-service.rc \
+    vendor/oneplus/sm8150-common/proprietary/vendor/etc/init/vendor.oneplus.camera.CameraHIDL@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oneplus.camera.CameraHIDL@1.0-service.rc \
     vendor/oneplus/sm8150-common/proprietary/vendor/etc/init/vendor.oneplus.hardware.display@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oneplus.hardware.display@1.0-service.rc \
     vendor/oneplus/sm8150-common/proprietary/vendor/etc/init/vendor.oneplus.hardware.drmkey@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oneplus.hardware.drmkey@1.0-service.rc \
     vendor/oneplus/sm8150-common/proprietary/vendor/etc/init/vendor.oneplus.hardware.hdcpkey@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oneplus.hardware.hdcpkey@1.0-service.rc \
@@ -364,6 +384,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/vendor/etc/init/vendor.qti.hardware.wigig.supptunnel@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.wigig.supptunnel@1.0-service.rc \
     vendor/oneplus/sm8150-common/proprietary/vendor/etc/init/vendor.qti.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2@1.0-service.rc \
     vendor/oneplus/sm8150-common/proprietary/vendor/etc/init/vendor.qti.power.pasrmanager@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.power.pasrmanager@1.0-service.rc \
+    vendor/oneplus/sm8150-common/proprietary/vendor/etc/init/vl53l1.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vl53l1.rc \
     vendor/oneplus/sm8150-common/proprietary/vendor/etc/init/vppservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vppservice.rc \
     vendor/oneplus/sm8150-common/proprietary/vendor/etc/libese-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libese-nxp.conf \
     vendor/oneplus/sm8150-common/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
@@ -447,6 +468,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/vendor/etc/wifi/wigig_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wigig_supplicant.conf \
     vendor/oneplus/sm8150-common/proprietary/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     vendor/oneplus/sm8150-common/proprietary/vendor/etc/xtra_root_cert.pem:$(TARGET_COPY_OUT_VENDOR)/etc/xtra_root_cert.pem \
+    vendor/oneplus/sm8150-common/proprietary/vendor/firmware/CAMERA_ICP.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.elf \
     vendor/oneplus/sm8150-common/proprietary/vendor/firmware/a225_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a225_pfp.fw \
     vendor/oneplus/sm8150-common/proprietary/vendor/firmware/a225_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a225_pm4.fw \
     vendor/oneplus/sm8150-common/proprietary/vendor/firmware/a225p5_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a225p5_pm4.fw \
@@ -610,6 +632,55 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/vendor/firmware/widevine.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/widevine.b07 \
     vendor/oneplus/sm8150-common/proprietary/vendor/firmware/widevine.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/widevine.mdt \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/btaudio_offload_if.so:$(TARGET_COPY_OUT_VENDOR)/lib/btaudio_offload_if.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/com.qti.sensor.gc5035.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.gc5035.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/com.qti.sensor.imx371.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.imx371.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/com.qti.sensor.imx471.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.imx471.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/com.qti.sensor.imx481.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.imx481.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/com.qti.sensor.imx586.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.imx586.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/com.qti.sensor.s5k3m5.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.s5k3m5.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/components/com.oneplus.node.distortion.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.oneplus.node.distortion.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/components/com.oneplus.node.eis.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.oneplus.node.eis.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/components/com.oneplus.node.memcpy.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.oneplus.node.memcpy.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/components/com.oneplus.node.preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.oneplus.node.preview.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/components/com.oneplus.node.sat.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.oneplus.node.sat.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/components/com.oneplus.node.snapshotfusion.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.oneplus.node.snapshotfusion.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/components/com.oneplus.node.supernightraw.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.oneplus.node.supernightraw.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/components/com.qti.camx.chiiqutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.camx.chiiqutils.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/components/com.qti.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.eisv2.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/components/com.qti.eisv3.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.eisv3.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/components/com.qti.hvx.addconstant.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.hvx.addconstant.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/components/com.qti.hvx.binning.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.hvx.binning.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/components/com.qti.node.depth.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.depth.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/components/com.qti.node.dummyrtb.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.dummyrtb.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/components/com.qti.node.dummysat.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.dummysat.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/components/com.qti.node.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.eisv2.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/components/com.qti.node.eisv3.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.eisv3.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/components/com.qti.node.fcv.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.fcv.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/components/com.qti.node.gpu.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.gpu.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/components/com.qti.node.memcpy.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.memcpy.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/components/com.qti.node.remosaic.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.remosaic.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/components/com.qti.node.stich.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.stich.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/components/com.qti.node.swregistration.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.swregistration.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/components/com.qti.stats.aec.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.aec.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/components/com.qti.stats.aecwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.aecwrapper.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/components/com.qti.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.af.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/components/com.qti.stats.afd.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.afd.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/components/com.qti.stats.afwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.afwrapper.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/components/com.qti.stats.asd.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.asd.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/components/com.qti.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.awb.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/components/com.qti.stats.awbwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.awbwrapper.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/components/com.qti.stats.haf.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.haf.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/components/com.qti.stats.hafoverride.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.hafoverride.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/components/com.qti.stats.localhistogram.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.localhistogram.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/components/com.qti.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.pdlib.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/components/com.qti.stats.pdlibsony.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.pdlibsony.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/components/com.qti.stats.pdlibwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.pdlibwrapper.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/components/com.qtistatic.stats.aec.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qtistatic.stats.aec.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/components/com.qtistatic.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qtistatic.stats.af.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/components/com.qtistatic.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qtistatic.stats.awb.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/components/com.qtistatic.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qtistatic.stats.pdlib.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/components/com.vidhance.stats.aec_dmbr.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.vidhance.stats.aec_dmbr.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/camera/components/libdepthmapwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/libdepthmapwrapper.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.ant@1.0.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.bluetooth_audio@1.0.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.dpm.api@1.0.so \
@@ -631,9 +702,10 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/hw/android.hardware.gnss@2.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.gnss@2.0-impl-qti.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.keymaster@3.0-impl-qti.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/hw/android.hardware.vibrator@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.vibrator@1.0-impl.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/hw/audio.bluetooth_qti.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.bluetooth_qti.default.so \
-    vendor/oneplus/sm8150-common/proprietary/vendor/lib/hw/audio.primary.msmnile.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.msmnile.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/com.qualcomm.qti.ant@1.0-impl.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/hw/hwcomposer.msmnile.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/hwcomposer.msmnile.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/hw/sound_trigger.primary.msmnile.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.msmnile.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/hw/vendor.qti.esepowermanager@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.esepowermanager@1.0-impl.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/hw/vendor.qti.gnss@3.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.gnss@3.0-impl.so \
@@ -650,6 +722,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/hw/vendor.qti.hardware.servicetracker@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.servicetracker@1.0-impl.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/hw/vendor.qti.power.pasrmanager@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.power.pasrmanager@1.0-impl.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/hw/vibrator.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vibrator.default.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/hw/vulkan.msmnile.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vulkan.msmnile.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/lib-imscmservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imscmservice.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/lib-imsdpl.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imsdpl.so \
@@ -696,8 +769,16 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCL.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libQSEEComAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib/libQSEEComAPI.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libQTEEConnector_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libQTEEConnector_vendor.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/libSTDualCamCaptureWT.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSTDualCamCaptureWT.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libSecureUILib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSecureUILib.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/libSonyIMX471RmscLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSonyIMX471RmscLibrary.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libStDrvInt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libStDrvInt.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/libSuperSensor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSuperSensor.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/libSuperSensorFallback.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSuperSensorFallback.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/libSuperSensorProcessor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSuperSensorProcessor.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/libSuperSensorProcessorCWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSuperSensorProcessorCWrapper.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/lib_bokehlib.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_bokehlib.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/lib_oneplus_watermark.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_oneplus_watermark.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libacdb-fts.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdb-fts.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbloader.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libacdbrtac.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbrtac.so \
@@ -708,6 +789,15 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libadsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsp_default_listener.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsprpc.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libaoa.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaoa.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/libarcsoft_beautyshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_beautyshot.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/libarcsoft_distortion_correction.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_distortion_correction.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/libarcsoft_dualcam_bokeh_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_dualcam_bokeh_api.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/libarcsoft_dualcam_refocus_left.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_dualcam_refocus_left.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/libarcsoft_dualcam_refocus_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_dualcam_refocus_preview.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/libarcsoft_dualcam_refocus_right.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_dualcam_refocus_right.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/libarcsoft_dualcam_refocus_uw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_dualcam_refocus_uw.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/libarcsoft_hdrplus_hvx_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_hdrplus_hvx_stub.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/libarcsoft_super_night_raw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_super_night_raw.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libaudcal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudcal.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libaudio_log_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudio_log_utils.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libaudioalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioalsa.so \
@@ -719,6 +809,13 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libbthost_if.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbthost_if.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libbtnv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbtnv.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libc2d30_bltlib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc2d30_bltlib.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/libcamera_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamera_nn_stub.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/libcamxfdalgov7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxfdalgov7.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/libcamxfdalgov8.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxfdalgov8.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/libcamxfdengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxfdengine.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/libcamxstatscore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxstatscore.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/libcamxswprocessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxswprocessalgo.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/libcamxtintlessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxtintlessalgo.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libcapiv2svacnn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2svacnn.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libcapiv2vop.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2vop.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libcdsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdsp_default_listener.so \
@@ -727,7 +824,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libcneapiclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcneapiclient.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libcneoplookup.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcneoplookup.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libcneqmiutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcneqmiutils.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/libcom.qti.chinodeutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcom.qti.chinodeutils.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libcpion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcpion.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/libcvface_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcvface_api.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libcvp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcvp.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libcvp_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcvp_common.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libcvp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcvp_stub.so \
@@ -742,8 +841,10 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libdrmtime.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrmtime.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libdsd2pcm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsd2pcm.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsutils.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/libfastcrc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcrc.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libfastcvdsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvdsp_stub.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libfastcvopt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvopt.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/libfastrpc_utf_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastrpc_utf_stub.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libgarden.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgarden.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libgcs-calwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs-calwrapper.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libgcs-ipc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs-ipc.so \
@@ -780,14 +881,19 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libminkdescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libminkdescriptor.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libmm-color-convertor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-color-convertor.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libmm-hdcpmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-hdcpmgr.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/libmmcamera_faceproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_faceproc.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/libmmcamera_faceproc2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_faceproc2.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libmmosal_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmosal_proprietary.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libmmparser_lite_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmparser_lite_proprietary.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libmmrtpdecoder_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmrtpdecoder_proprietary.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libmmrtpencoder_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmrtpencoder_proprietary.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/libmorpho_image_refiner.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmorpho_image_refiner.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmpbase.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libmulawdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmulawdec.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libnlnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnlnetmgr.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libnpu.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnpu.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemcrypto.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/libopcamera_native_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libopcamera_native_modules.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libopenvx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libopenvx.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libops.so:$(TARGET_COPY_OUT_VENDOR)/lib/libops.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libp61-jcop-kit.so:$(TARGET_COPY_OUT_VENDOR)/lib/libp61-jcop-kit.so \
@@ -841,6 +947,12 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libsensorslog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorslog.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libslimclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libslimclient.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libsmwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsmwrapper.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/libsns_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_api.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/libsns_device_mode_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_device_mode_stub.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/libsns_fastRPC_util.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_fastRPC_util.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/libsns_low_lat_stream_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_low_lat_stream_stub.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/libsnsapi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsnsapi.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/libsnsdiaglog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsnsdiaglog.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libspcom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspcom.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libspl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspl.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libssc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssc.so \
@@ -851,9 +963,17 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libstagefright_soft_qtiflacdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_qtiflacdec.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libstagefrightdolby.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefrightdolby.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libsurround_3mic_proc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsurround_3mic_proc.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/libswregistrationalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswregistrationalgo.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/libswvdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswvdec.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libthermalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthermalclient.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinyxml2_1.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/libtriplecam_image_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtriplecam_image_optical_zoom.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/libtriplecam_optical_zoom_control.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtriplecam_optical_zoom_control.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/libtriplecam_video_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtriplecam_video_optical_zoom.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libtzdrmgenprov.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtzdrmgenprov.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/libvideoutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvideoutils.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/libvidhance.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvidhance.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/libvl53l1_daemon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvl53l1_daemon.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libvppclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvppclient.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libvpphcp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpphcp.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/libvpphvx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpphvx.so \
@@ -911,6 +1031,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/rfsa/adsp/libproxy_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libproxy_skel.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/rfsa/adsp/libsns_device_mode_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsns_device_mode_skel.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsns_low_lat_stream_skel.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/sensors.hal.tof.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.hal.tof.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libasphere.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/soundfx/libhaptic_effect.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libhaptic_effect.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/soundfx/libqcbassboost.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcbassboost.so \
@@ -924,6 +1045,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/vendor.display.color@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.2.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.postproc@1.0.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/vendor.dolby.hardware.dms@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.dolby.hardware.dms@1.0.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/vendor.oneplus.camera.CameraHIDL@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oneplus.camera.CameraHIDL@1.0.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib/vendor.oneplus.camera.CameraMDMHIDL@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oneplus.camera.CameraMDMHIDL@1.0.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/vendor.oneplus.hardware.param@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oneplus.hardware.param@1.0.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.data.factory@2.0.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/vendor.qti.esepowermanager@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.esepowermanager@1.0.so \
@@ -956,6 +1079,60 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/vendor.qti.imsrtpservice@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.imsrtpservice@2.1.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib/vendor.qti.latency@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.latency@2.0.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/btaudio_offload_if.so:$(TARGET_COPY_OUT_VENDOR)/lib64/btaudio_offload_if.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/com.qti.sensor.gc5035.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.gc5035.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/com.qti.sensor.imx371.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.imx371.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/com.qti.sensor.imx471.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.imx471.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/com.qti.sensor.imx481.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.imx481.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/com.qti.sensor.imx586.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.imx586.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/com.qti.sensor.s5k3m5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.s5k3m5.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/com.qti.tuned.default.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.default.bin \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/components/com.oneplus.node.distortion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.oneplus.node.distortion.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/components/com.oneplus.node.eis.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.oneplus.node.eis.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/components/com.oneplus.node.memcpy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.oneplus.node.memcpy.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/components/com.oneplus.node.preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.oneplus.node.preview.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/components/com.oneplus.node.sat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.oneplus.node.sat.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/components/com.oneplus.node.snapshotfusion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.oneplus.node.snapshotfusion.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/components/com.oneplus.node.supernightraw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.oneplus.node.supernightraw.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/components/com.qti.camx.chiiqutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.camx.chiiqutils.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/components/com.qti.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.eisv2.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/components/com.qti.eisv3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.eisv3.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/components/com.qti.hvx.addconstant.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.hvx.addconstant.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/components/com.qti.hvx.binning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.hvx.binning.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/components/com.qti.node.depth.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.depth.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/components/com.qti.node.dummyrtb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.dummyrtb.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/components/com.qti.node.dummysat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.dummysat.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/components/com.qti.node.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.eisv2.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/components/com.qti.node.eisv3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.eisv3.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/components/com.qti.node.fcv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.fcv.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/components/com.qti.node.gpu.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.gpu.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/components/com.qti.node.memcpy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.memcpy.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/components/com.qti.node.remosaic.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.remosaic.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/components/com.qti.node.stich.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.stich.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/components/com.qti.node.swregistration.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.swregistration.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/components/com.qti.stats.aec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.aec.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/components/com.qti.stats.aecwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.aecwrapper.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/components/com.qti.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.af.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/components/com.qti.stats.afd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.afd.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/components/com.qti.stats.afwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.afwrapper.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/components/com.qti.stats.asd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.asd.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/components/com.qti.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.awb.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/components/com.qti.stats.awbwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.awbwrapper.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/components/com.qti.stats.haf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.haf.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/components/com.qti.stats.hafoverride.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.hafoverride.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/components/com.qti.stats.localhistogram.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.localhistogram.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/components/com.qti.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.pdlib.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/components/com.qti.stats.pdlibsony.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.pdlibsony.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/components/com.qti.stats.pdlibwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.pdlibwrapper.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.aec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.aec.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.af.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.awb.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.pdlib.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/components/com.vidhance.stats.aec_dmbr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.vidhance.stats.aec_dmbr.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/components/libdepthmapwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/libdepthmapwrapper.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/fdconfigpreview.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigpreview.bin \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/fdconfigpreviewlite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigpreviewlite.bin \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/fdconfigvideo.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideo.bin \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.imscmservice@1.0.so \
@@ -978,9 +1155,10 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/hw/android.hardware.gnss@2.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss@2.0-impl-qti.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/hw/android.hardware.vibrator@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.vibrator@1.0-impl.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/hw/audio.bluetooth_qti.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.bluetooth_qti.default.so \
-    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/hw/audio.primary.msmnile.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.msmnile.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/hw/hwcomposer.msmnile.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/hwcomposer.msmnile.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/hw/sound_trigger.primary.msmnile.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sound_trigger.primary.msmnile.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/hw/vendor.qti.gnss@3.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.gnss@3.0-impl.so \
@@ -1000,6 +1178,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.servicetracker@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.servicetracker@1.0-impl.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/hw/vendor.qti.power.pasrmanager@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.power.pasrmanager@1.0-impl.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/hw/vibrator.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vibrator.default.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/hw/vulkan.msmnile.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vulkan.msmnile.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/lib-imscmservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imscmservice.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/lib-imsdpl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsdpl.so \
@@ -1041,8 +1220,16 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libQSEEComAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQSEEComAPI.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libQTEEConnector_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQTEEConnector_vendor.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libSTDualCamCaptureWT.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSTDualCamCaptureWT.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libSecureUILib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSecureUILib.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libSonyIMX471RmscLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSonyIMX471RmscLibrary.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libStDrvInt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libStDrvInt.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libSuperSensor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSuperSensor.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libSuperSensorFallback.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSuperSensorFallback.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libSuperSensorProcessor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSuperSensorProcessor.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libSuperSensorProcessorCWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSuperSensorProcessorCWrapper.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/lib_bokehlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_bokehlib.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/lib_oneplus_watermark.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_oneplus_watermark.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libacdb-fts.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdb-fts.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdbloader.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libacdbrtac.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdbrtac.so \
@@ -1053,6 +1240,22 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadsprpc.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libaoa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaoa.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libappclassifier.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libappclassifier.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libarcsoft_beautyshot.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_beautyshot.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libarcsoft_distortion_correction.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_distortion_correction.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libarcsoft_dualcam_bokeh_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_dualcam_bokeh_api.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libarcsoft_dualcam_refocus_left.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_dualcam_refocus_left.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libarcsoft_dualcam_refocus_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_dualcam_refocus_preview.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libarcsoft_dualcam_refocus_right.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_dualcam_refocus_right.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libarcsoft_dualcam_refocus_uw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_dualcam_refocus_uw.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libarcsoft_hdr_couple_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_hdr_couple_api.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libarcsoft_hdr_denoise_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_hdr_denoise_api.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libarcsoft_hdrplus_hvx_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_hdrplus_hvx_stub.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libarcsoft_high_dynamic_range.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_high_dynamic_range.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libarcsoft_high_dynamic_range_couple.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_high_dynamic_range_couple.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libarcsoft_low_light_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_low_light_hdr.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libarcsoft_piczoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_piczoom.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libarcsoft_smart_denoise.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_smart_denoise.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libarcsoft_super_night_raw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_super_night_raw.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libarm_proxy_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarm_proxy_skel.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libaudcal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudcal.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libaudio_log_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudio_log_utils.so \
@@ -1065,6 +1268,13 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libbthost_if.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbthost_if.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libbtnv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbtnv.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libc2d30_bltlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc2d30_bltlib.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libcamera_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera_nn_stub.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libcamxfdalgov7.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfdalgov7.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libcamxfdalgov8.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfdalgov8.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libcamxfdengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfdengine.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libcamxstatscore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxstatscore.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libcamxswprocessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxswprocessalgo.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libcamxtintlessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxtintlessalgo.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libcapiv2svacnn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcapiv2svacnn.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libcapiv2vop.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcapiv2vop.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libcdsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsp_default_listener.so \
@@ -1073,8 +1283,10 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libcneapiclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneapiclient.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libcneoplookup.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneoplookup.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libcneqmiutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneqmiutils.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libcom.qti.chinodeutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcom.qti.chinodeutils.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libconfigdb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libconfigdb.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libcpion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcpion.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libcvface_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvface_api.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libcvp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvp.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libcvp_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvp_common.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libcvp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvp_stub.so \
@@ -1092,6 +1304,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsutils.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libfastcvdsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvdsp_stub.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libfastcvopt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvopt.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libfastrpc_utf_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastrpc_utf_stub.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libgameoptfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgameoptfeature.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libgarden.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgarden.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libgarden_haltests_e2e.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgarden_haltests_e2e.so \
@@ -1146,8 +1359,12 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libminkdescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminkdescriptor.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libmm-color-convertor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-color-convertor.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libmm-hdcpmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-hdcpmgr.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libmmcamera_faceproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_faceproc.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libmmcamera_faceproc2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_faceproc2.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libmmosal_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmosal_proprietary.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libmmparser_lite_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmparser_lite_proprietary.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libmorpho_image_refiner.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmorpho_image_refiner.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmpbase.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libmulawdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmulawdec.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libnetmgr_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr_common.so \
@@ -1156,6 +1373,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libnlnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnlnetmgr.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libnpu.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnpu.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboemcrypto.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libopcamera_native_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libopcamera_native_modules.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libopenvx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libopenvx.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libops.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libops.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libp61-jcop-kit.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libp61-jcop-kit.so \
@@ -1225,18 +1443,33 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libsensorslog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorslog.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libsettings.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsettings.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libslimclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libslimclient.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libsns_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_api.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libsns_device_mode_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_device_mode_stub.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libsns_fastRPC_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_fastRPC_util.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libsns_low_lat_stream_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_low_lat_stream_stub.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libsnsapi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnsapi.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libsnsdiaglog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnsdiaglog.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libspcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspcom.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libspl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspl.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssc.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libssc_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssc_default_listener.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssd.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libst_relighting.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libst_relighting.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libstagefright_soft_qtiflacdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_soft_qtiflacdec.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libstagefrightdolby.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefrightdolby.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libstblur_capture_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstblur_capture_api.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libswregistrationalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswregistrationalgo.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libswvdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswvdec.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libsystem_health_mon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsystem_health_mon.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libthermalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthermalclient.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libtime_genoff.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtime_genoff.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml2_1.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libtriplecam_image_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtriplecam_image_optical_zoom.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libtriplecam_optical_zoom_control.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtriplecam_optical_zoom_control.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libtriplecam_video_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtriplecam_video_optical_zoom.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libtzdrmgenprov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtzdrmgenprov.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libvidhance.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libvl53l1_daemon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvl53l1_daemon.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libvppclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvppclient.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libvpphcp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpphcp.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/libvpphvx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpphvx.so \
@@ -1258,6 +1491,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/qcrild_librilutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qcrild_librilutils.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/qtibus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qtibus.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/qtimutex.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qtimutex.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/sensors.hal.tof.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.hal.tof.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libasphere.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/soundfx/libhaptic_effect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libhaptic_effect.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/soundfx/libqcbassboost.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcbassboost.so \
@@ -1279,6 +1513,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/vendor.nxp.eventprocessor@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nxp.eventprocessor@1.0.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/vendor.nxp.nxpese@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nxp.nxpese@1.0.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/vendor.nxp.nxpnfc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nxp.nxpnfc@1.0.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/vendor.oneplus.camera.CameraHIDL@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oneplus.camera.CameraHIDL@1.0.so \
+    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/vendor.oneplus.camera.CameraMDMHIDL@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oneplus.camera.CameraMDMHIDL@1.0.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/vendor.oneplus.hardware.drmkey@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oneplus.hardware.drmkey@1.0.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/vendor.oneplus.hardware.hdcpkey@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oneplus.hardware.hdcpkey@1.0.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/vendor.oneplus.hardware.ifaa@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oneplus.hardware.ifaa@2.0.so \
@@ -1393,5 +1629,4 @@ PRODUCT_PACKAGES += \
     ims \
     qcrilmsgtunnel \
     WfdCommon \
-    vendor.qti.hardware.capabilityconfigstore-V1.0-java \
-    dashd
+    vendor.qti.hardware.capabilityconfigstore-V1.0-java
